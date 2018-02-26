@@ -1,0 +1,35 @@
+<div class="container">
+
+  <div class="counter-header">
+
+    <h2 [ngClass]="{'blueText': (counter % 2) === 0, 'greenText': (counter % 2) === 1}">{{counter}}</h2>
+    <p *ngIf="!counterState">Click Start button to start the Counter</p>
+
+  </div>
+
+  <div class="counter-action">
+
+    <ul>
+
+      <li *ngIf="!(counterState === counterStates.START)">
+        <a (click)="startTimer()">
+          <img src="../../assets/images/ic_play_circle_outline_black_24dp_2x.png">
+        </a>
+      </li>
+
+      <li *ngIf="counterState === counterStates.START">
+        <a (click)="stopTimer()">
+          <img src="../../assets/images/ic_pause_circle_outline_black_24dp_2x.png">
+        </a>
+      </li>
+
+      <li>
+        <a (click)="resetTimer()">
+          <img src="../../assets/images/ic_replay_black_24dp_2x.png">
+        </a>
+      </li>
+
+    </ul>
+
+  </div>
+</div>

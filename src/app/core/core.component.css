@@ -1,0 +1,29 @@
+.container {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.counter-header {
+  margin: 2rem auto;
+}
+
+.counter-action ul {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0;
+  list-style-type: none;
+}
+
+.counter-action ul li {
+  display: inline;
+  list-style-type: none;
+}
+
+.blueText {
+  color: darkcyan;
+}
+
+.greenText {
+  color: #90ee90;
+}

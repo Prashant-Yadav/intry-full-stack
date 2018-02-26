@@ -1,0 +1,23 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  height: 100%;
+  margin: auto;
+}
+
+#wrapper {
+  margin: 3rem auto;
+}
